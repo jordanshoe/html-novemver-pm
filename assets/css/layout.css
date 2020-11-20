@@ -138,6 +138,7 @@ section{
 }
 .showcase a{
     background-color: gray;
+    padding: 3px;
 }
 .content{
     /* border: 2px solid black; */
