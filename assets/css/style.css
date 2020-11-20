@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+/* 
+    css = describes the design of the html structure (adjective)
+    html = build the webpage structure (noun)
+
+*/
+/* 3 types of css 
+
+    1. external = need a file(.css) and used the Link tag
+    2. internal = used style tags
+    3. inline = used style attribute
+
+*/
+/* 
+    css syntax:
+
+  selector = elements,attributes{
+        property:value = declaration
+    }
+
+*/
+/* 
+    typography properties
+    - font-family 
+         generic fonts: 
+            1. serif
+            2. sans-serif
+            3. cursive
+            4. monospace
+            5. fantasy
+    - font-size
+            unit value:
+            1. px = 16px
+            2. em = 1em
+            3. %  = 100%
+    - text-align
+            values:
+            1. left
+            2.right
+            3.center
+            4 justify
+    - font-weight
+            values:
+            bold
+            bolder
+            100-900
+    - line-height
+            unit value
+            1. px
+            2. em
+            3. %
+            4. line space
+    - letter-spacing
+            unit value
+    - word-spacing
+            unit value
+    - text-transform
+    - text-decoration
+    - text-shadow
+        text-shadow:x y z color
+    -:hover
+        selector:hover
+
+*/
+/* 
+    color values:
+        color name: black or white
+        hex name: #000000 or #ffffff
+        rgba name: rgba(0,0,0,1)
+
+*/
+
+body{
+    background-color: rgba(152, 238, 13, 0.707);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+h1:hover{
+    background-color: yellow;
+}
+ul,ol{
+    text-align: left;
+}
+img{
+    opacity: .2;
+}
+img:hover{
+    opacity: 1;
+}
+p{
+    text-align: justify;
+    font-weight: 300;
+    line-height: 2;
+    /* letter-spacing: 16px; */
+    word-spacing: 40px;
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-shadow:0px 1px 1px red ;
+}
+p:hover{
+    color: yellow;
+    text-decoration: overline;
+}
+p span{
+    text-decoration: line-through;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+#julian{
+    background-color: gray;
+    font-size: 32px;
+    font-family: cursive;
+}
+#hiro{
+    background-color: yellow;
+}
+#joe{
+    color: pink;
+}
+.julian{
+    background-color: yellowgreen;
+}
+.hiro{
+    background-color: teal;
+}
+.kira{
+    color: red;
+}
+.joe{
+    color: white;
+}

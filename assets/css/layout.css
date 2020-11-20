@@ -1,0 +1,178 @@
+/* layout properties
+    display = good for content layout
+            values:
+              1. inline
+              2. inline-block
+              3. block
+              4. none
+    float = good for structure layout
+            values:
+              1. left
+              2.right
+              3. none
+    clear = to stop the floating element
+            values:
+              1. left
+              2. right
+              3. both
+    position = position element
+    z-index = layering positioned element
+
+
+*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+header{
+    background-color: rgba(26, 2, 2, .7);
+    /* border: 2px solid red; */
+    padding: 20px;
+    line-height: 1.5;
+    text-transform: capitalize;
+     
+}
+header img{
+    display: block;
+    margin: 0 auto;
+}
+header span{
+   /* border: 1px dotted black; */
+    text-align: center;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    letter-spacing: 10px;
+    background-color: chartreuse;
+    
+}
+nav{
+    background-color: rgba(26, 2, 2, 0.5);
+    /* border: 2px solid red; */
+    padding: 20px;
+    overflow: auto;
+}
+nav ul{
+    /* border: 1px dashed black; */
+    padding: 20px;
+    /* display: inline-block; */
+    float: right;
+    margin-top: 20px;
+}
+
+nav ul li{
+    /* border: 1px dashed black; */
+    display: inline;
+    margin-top: 30px;
+    width: 100px;
+    padding:10px 20px;
+}
+nav .sns{
+    /* border: 1px dotted black; */
+    float:left;
+    /* display: inline-block; */
+    /* margin-left: 100px; */
+}
+nav .sns a{
+    /* border: 1px dotted black; */
+    display: block;
+    margin-top: 10px;
+    width: 200px;
+}
+nav p{
+    clear: both;
+}
+main{
+    background-color: rgba(26, 2, 2, 0.13);
+    overflow: auto;
+    
+}
+section{
+    border: 2px solid blue;
+    height: 500px;
+    float: left;
+    width: 70%;
+    border-bottom:none;
+    border-left: none;
+    border-top: none
+}
+.showcase{
+    /* border: 2px solid black; */
+    height: 300px;
+    padding: 20px 15px;
+    line-height: 1.5;
+    padding-top: 40px;
+}
+.content{
+    /* border: 2px solid black; */
+    /* height: 200px; */
+    overflow: auto;
+}
+.content1{
+    /* border: 2px dotted red; */
+    /* height: 200px; */
+    float: left;
+    width: 40%;
+    padding: 15px;
+}
+.content2, .content3{
+    /* border: 2px dashed red; */
+    /* height: 200px; */
+    float: left;
+    width: 30%;
+    padding: 15px;
+}
+.content img{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+aside{
+    /* border: 2px solid rgba(0, 128, 0, 0.219); */
+    /* height: 500px; */
+  
+    float: left;
+    width: 30%;
+}
+.advertisement{
+    /* border: 2px solid black; */
+    height: 200px;
+    overflow: auto;
+}
+.ad1 img{
+    display: block;
+    width: 100%;
+    height: auto;
+    /* border-radius: 20px; */
+}
+.ad1, .ad2{
+    /* border: 1px dashed red; */
+    /* height: 200px; */
+    float: left;
+    width: 50%;
+    padding: 15px;
+}
+.ad2{
+    padding-top: 60px;
+    line-height: 1.6;
+}
+.sponsor{
+    /* border: 2px solid blue; */
+    /* height: 300px; */
+    clear: both;
+    padding: 15px;
+}
+.sponsor img{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+hr{
+    width: 50%;
+    margin: 0 auto;
+}
+footer{
+    background-color: rgba(26, 2, 2, 0.3);
+    border: 2px solid black;
+    height: 75px;
+}
