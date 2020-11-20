@@ -15,7 +15,13 @@
               1. left
               2. right
               3. both
-    position = position element
+    position = position element anywhere on the browser
+            values:
+              1. static = default do not support movement of the element
+              2. relative = move element from its original position and used as parent position
+              3. fixed = move element from browser point of view and used as parent position
+              4. absolute = best used as child position
+
     z-index = layering positioned element
 
 
@@ -27,10 +33,18 @@
 header{
     background-color: rgba(26, 2, 2, .7);
     /* border: 2px solid red; */
-    padding: 20px;
+    padding: 50px 20px ;
+    
     line-height: 1.5;
     text-transform: capitalize;
+    position: relative;
      
+}
+header .logo{
+    border: 1px dotted red;
+    position: absolute;
+    top: 30px;
+    right: 40px;
 }
 header img{
     display: block;
@@ -51,6 +65,15 @@ nav{
     /* border: 2px solid red; */
     padding: 20px;
     overflow: auto;
+    height: 124px;
+}
+.menu{
+    border: 2px solid black;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 170px;
+    z-index: 3;
 }
 nav ul{
     /* border: 1px dashed black; */
@@ -85,23 +108,33 @@ nav p{
 main{
     background-color: rgba(26, 2, 2, 0.13);
     overflow: auto;
+
     
 }
 section{
     border: 2px solid blue;
-    height: 500px;
+    /* height: 500px; */
     float: left;
     width: 70%;
     border-bottom:none;
     border-left: none;
     border-top: none
 }
+/* background-image: url(); = single image only
+   background:url(), url(), url() = multiple image
+
+*/
 .showcase{
     /* border: 2px solid black; */
     height: 300px;
     padding: 20px 15px;
     line-height: 1.5;
     padding-top: 40px;
+    background: url(../img/apple.png),url(../img/puma.jpg);
+    background-size:150px 150px;
+    background-repeat: no-repeat, repeat;
+    background-position: center center;
+    background-attachment: fixed, scroll;
 }
 .content{
     /* border: 2px solid black; */
@@ -126,6 +159,44 @@ section{
     display: block;
     margin: 0 auto;
     width: 80%;
+}
+.gal-content{
+    overflow: auto;
+}
+.col1, .col2, .col3, .col4{
+    float: left;
+    width: 25%;
+    /* height: 200px; */
+    border: 2px dotted red;
+    padding: 15px;
+
+}
+.gal-content img{
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 10px auto;
+}
+.c1-p1{
+    position: relative;
+    z-index: 2;
+}
+.c1-p1 span{
+    background-color: red;
+    padding: 2px;
+    position: absolute;
+    right: 0;
+    top: 80px;
+}
+.c1-p2{
+    position: relative;
+}
+.c1-p2 span{
+    background-color: yellow;
+    padding: 2px;
+    position: absolute;
+    right: 0;
+    top:80px;
 }
 aside{
     /* border: 2px solid rgba(0, 128, 0, 0.219); */
@@ -171,8 +242,101 @@ hr{
     width: 50%;
     margin: 0 auto;
 }
+table{
+    width: 100%;
+    border: 2px solid black;
+    /* border-collapse: collapse; */
+    border-spacing: 10px;
+}
+td, th{
+    
+    border:2px solid red ;
+    border-top: none;
+  
+}
+th:hover{
+    background-color: yellow;
+}
+input, label, textarea{
+    width: 100%;
+    display: block;
+    
+}
+input, textarea{
+    padding: 10px;
+    border-radius: 5px;
+}
+input:hover{
+    background-color: yellow;
+}
+fieldset{
+    width: 400px;
+    margin: 0 auto;
+}
+form{
+    background: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 footer{
     background-color: rgba(26, 2, 2, 0.3);
     border: 2px solid black;
-    height: 75px;
+    clear: both;
+   
 }
+footer a{
+    position: fixed;
+    right: 20px;
+    bottom: 0;
+    z-index: 100;
+
+}
+/* offset properties = movement of the position property
+    
+    left:0;
+    right:
+    top:0;
+    bottom:
+
+
+*/
+/* .static{
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+    position: static;
+    left: 100px;
+}
+.relative{
+    width: 200px;
+    height: 200px;
+    border: 2px solid green;
+    position: relative;
+    left: 300px;
+    top: 150px;
+}
+.fixed{
+    width: 200px;
+    height: 200px;
+    border: 2px solid blue;
+    position: fixed;
+    right: 50px;
+    bottom: 20px;
+}
+.absolute{
+    width: 75px;
+    height: 75px;
+    border: 2px solid black;
+    position: absolute;
+    right: 20px;
+    top:0;
+}
+.relative1{
+    width: 400px;
+    height: 400px;
+    border: 2px solid green;
+    position: relative;
+    left: 300px;
+    top: 150px;
+} */

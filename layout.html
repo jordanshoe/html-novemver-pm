@@ -10,22 +10,28 @@
     <header>
         <h1>welcome to my website</h1>
         <p>Lorem ipsum dolor sit amet.</p>
-        <img src="assets/img/logo.png" width="75" alt="">
-        <span>LOGO</span>
+        <div class="logo">
+            <img src="assets/img/logo.png" width="75" alt="">
+            <span>LOGO</span>
+        </div>
+        
     </header>
     <nav>
-        <ul>
-            <li><a href="#">home</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">contact</a></li>
-        </ul>
-        <div class="sns">
-            <h3>follow us!</h3>
-            <a href="#">twitter</a>
-            <a href="#">facebook</a>
-            <a href="#">instagram</a>
+        <div class="menu">
+             <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+            <div class="sns">
+                <h3>follow us!</h3>
+                <a href="#">twitter</a>
+                <a href="#">facebook</a>
+                <a href="#">instagram</a>
+            </div>
+            <p>Lorem ipsum dolor sit amet.</p>
         </div>
-        <p>Lorem ipsum dolor sit amet.</p>
+       
     </nav>
     <main>
         <section>
@@ -54,6 +60,134 @@
                 </div>
 
             </article>
+            <article class="gallery">
+                <h2>Gallery photo</h2>
+                <div class="gal-content">
+                    <div class="col1">
+                        <div class="c1-p1">
+                            <h4>photo1</h4>
+                            <img src="assets/img/puma.jpg" width="100" height="100" alt="">
+                            <p>Lorem, ipsum dolor.</p>\
+                            <span>50% OFF</span>
+                        </div>
+                        <div class="c1-p2">
+                            <h4>photo1</h4>
+                            <img src="assets/img/puma.jpg" width="100" height="100" alt="">
+                            <p>Lorem, ipsum dolor.</p>
+                            <span>New arrival</span>
+                        </div>
+
+                    </div>
+                    <div class="col2">
+                        <div class="c2-p1">
+
+                        </div>
+                        <div class="c2-p2">
+                            
+                        </div>
+
+                    </div>
+                    <div class="col3">
+                        <div class="c3-p1">
+
+                        </div>
+                        <div class="c3-p2">
+                            
+                        </div>
+
+                    </div>
+                    <div class="col4">
+                        <div class="c4-p1">
+
+                        </div>
+                        <div class="c4-p2">
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+            <article id="category">
+                <h3>category</h3>
+                <table >
+                    <tr>
+                        <th>travel</th>
+                        <th>sport</th>
+                        <th>food</th>
+                        <th>movies</th>
+                    </tr>
+                    <tr>
+                        <td colspan="3">asia</td>
+                        <!-- <td>basketball</td>
+                        <td>street foods</td> -->
+                        <td>action</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">europe</td>
+                        <td>football</td>
+                        <td colspan="2">japanese food</td>
+                        <!-- <td>sci-fi</td> -->
+                    </tr>
+                    <tr>
+                        <!-- <td>south america</td> -->
+                        <td>baseball</td>
+                        <td width="75" height="75">pasta</td>
+                        <td rowspan="2">drama</td>
+                    </tr>
+          
+                    <tr>
+                        <td>australia</td>
+                        <td colspan="2">Golf</td>
+                        <!-- <td>filipino food</td> -->
+                        <!-- <td>anime</td> -->
+                    </tr>
+                 </table>
+          
+
+            </article>
+            <article id="contact">
+                <h3>Contact us</h3>
+                <form action="https://kredo.jp/briefing" method="get">
+
+                    <fieldset>
+                        <legend>Required Information</legend>
+                        <div>
+                            <label for="fname">Firstname:</label>
+                            <input type="text" name="firstname" id="fname" required minlength="5" size="50" placeholder="type your firstname here" >
+                        </div>
+                        <div>
+                             <label for="lname">Lastname:</label>
+                             <input type="text" name="lastname" id="lname" required maxlength="20">
+                        </div>
+            
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email"  required >
+                        </div>
+            
+                        <div>
+                             <label for="pword">Password:</label>
+                             <input type="password" name="password" id="pword"required >
+                        </div>
+            
+                       <div>
+                           <label for="bdate">Birtdate:</label>
+                           <input type="date" name="birthdate" id="bdate"required >
+                       </div>
+            
+                        <div>
+                            <label for="credit">Credit Card:</label>
+                            <input type="number" name="credit-card" id="credit" required>
+                        </div>
+
+                        <textarea name="comment" id="" cols="30" rows="10"></textarea>
+
+                        <input type="submit">
+            
+                    </fieldset>
+                </form>
+                
+            </article>
 
         </section>
         <aside>
@@ -73,6 +207,32 @@
         </aside>
     </main>
     <footer>
+        <a href="#top">
+            <img src="assets/img/home.jpg" alt="" width="50" height="50">
+        </a>
+
+        <!-- <div class="static">
+            <h3>static position</h3>
+        </div>
+        <div class="relative">
+            <h3>relative position</h3>
+        </div>
+        <div class="fixed">
+            <h3>fixed position</h3>
+            <div class="absolute">
+                <h3>absolute position fixed</h3>
+            </div>
+        </div>
+        <div class="absolute">
+            <h3>absolute position</h3>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa repellat consequuntur placeat praesentium doloremque a eos perspiciatis eum accusamus est.</p>
+        <div class="relative1">
+            <h3>relative position</h3>
+            <div class="absolute">
+                <h3>absolute position inside relative</h3>
+            </div>
+        </div> -->
 
     </footer>
 </body>
